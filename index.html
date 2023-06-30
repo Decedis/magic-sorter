@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/default.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Magic Sort</title>
 </head>
 <body>
     <header>
         <h1>Magic Sort</h1>
     </header>
+    <section class="sort-pair">
+        <h4>Browse Sort</h4>
+        <button id="sort-asc">A-Z</button>
+        <button id="sort-desc">Z-A</button>
+    </section>
+    <section class="cards">
+        <h2>Card Library</h2>
+        <div id="browse-injection">
+            <!-- Inject Here -->
+        </div>
+    </section>
+    <section class="sort-pair">
+        <h4>Favorite Sort</h4>
+        <button id="sort-asc-fav">A-Z</button>
+        <button id="sort-desc-fav">Z-A</button>
+    </section>
+    <section class="favorites">
+        <h2>Favorites</h2>
+        <div class="fav-info">
+            
+            <span class="unique-count">Instant Cards 
+                <span id="instant">0</span>
+            </span>
+            <span class="unique-count">Creature Cards 
+                <span id="creature">0</span>
+            </span>
+            <span class="unique-count">Sorcery Cards 
+                <span id="sorcery">0</span>
+            </span>
+            <span class="unique-count">Enchantment Cards 
+                <span id="enchantment">0</span>
+            </span>
+            <span class="unique-count">Legendary Cards 
+                <span id="legendary">0</span>
+            </span>
+            
+        </div>
+        
+        <div id="favorite-injection">
+            <!-- Favorite Injection -->
+        </div>
+    </section>
     <script src="./src/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+header {
+    text-align: center;
+    color: white;
+    background-color: rgb(124, 67, 67);
+    padding: 2rem;
+}
+.sort-pair {
+    text-align: center;
+    padding: 2rem;
+}
+.sort-pair .sort-desc,
+.sort-pair .sort-asc {
+    border: 0;
+    border-radius: 0;
+    padding: 0.5rem;
+
+    background-color: rgb(124, 67, 67);
+    color: white;
+    cursor: pointer;
+}
+.cards, .favorites {
+    margin: 2rem 1.5rem 1rem 1.5rem;
+}
+.cards h2, .favorites h2 {
+    margin-bottom: 2rem;
+}
+.card {
+    position: relative;
+}
+.hover-info{
+    position: absolute;
+    
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem;
+    background-color: rgba(1,1,1,0.5);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+}
+.hover-info:hover { opacity: 1; }
+#browse-injection, #favorite-injection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+#browse-injection .img-container img {
+    max-width: 100%;
+    min-width: 100%;
+    cursor: pointer;
+}
+.fav-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    gap: 1.25rem;
+    justify-content: left;
+}
+.unique-count {
+    border: 2px solid black;
+    padding: 10px;
+    margin-right: 5px;
+}
